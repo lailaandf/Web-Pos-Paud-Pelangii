@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>POS PAUD PELANGI</title>
+    <link rel="stylesheet" href="css/css_project.css">
+    <link rel="icon" href="img_project/logo_paud_pelangi.png">
+</head>
+<body>
+    <header>
+        <nav class="navheader">
+            <div class="container">
+                <img src="img_project/logo_paud_pelangi.png">
+                <div class="navnama">
+                    <h3>Pos<span> Paud</span><span class="span2"> Pelangi</span></h3>
+                </div>
+                <div class="navitem">
+                    <ul>
+                        <li><a href="Beranda.html">Home</a></li>
+
+                        <li>
+                            <a href="Profile.html">Profile <i class="arrow down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="sejarah.html">Sejarah</a></li>
+                                <li><a href="visi misi.html">Visi Misi</a></li>
+                                <li><a href="daftar guru.html">Daftar Guru</a></li>
+                                <li><a href="kurikulum.html">Kurikulum</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="About Us.html">About Us <i class="arrow down"></i></a>
+                            <ul class="dropdown-about-us">
+                                <li><a href="Prestasi.html">Prestasi</a></li>
+                                <li><a href="Kegiatan.html">Kegiatan</a></li>
+                                <li><a href="Seragam.html">Aturan Seragam</a></li>
+                                <li><a href="Fasilitas.html">Fasilitas</a></li>
+                            </ul>
+                        </li>
+                        
+
+                        <li>
+                            <a href="Contact.html">Contact</a>
+                        </li> 
+                    </ul>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-visimisi">
+            <h1 class="h1-visimisi">Visi, Misi & Tujuan Paud Pelangi</h1>
+        </section>
+        <section>
+            <div class="container-visimisi reveal">
+                <h2 style="text-shadow: 2px 2px #FF7F3E;">SEHAT, CERDAS, CERIA</h2>
+                <div class="cards-visimisi">
+                    <div class="text-card-visimisi">
+                        <h3>VISI</h3>
+                        <p>“Membentuk Generasi yang Beriman, Berilmu, Terampil, Mandiri dan Berbudi pekerti
+                            luhur”</p>
+                    </div>
+                    <div class="text-card-visimisi">
+                        <h3>MISI</h3>
+                        <p>a. Mengembangkan lembaga pendidikan PAUD yang Mandiri dan Berkualitas</p>
+                        <p>b. Menggali dan mengembangkan prestasi anak usia dini secara optimal melalui layanan individual </p>
+                        <p>c. Memberikan bakat keterampilan kecakapan untuk dapat hidup mandiri</p>
+                        <p>d. Menanamkan Budi pekerti luhur berlandaskan agama dan budaya</p>
+                        <p>e. Mengembangkan kreatifitas anak usia dini sesuai potensinya.</p>
+                    </div>
+                    <div class="text-card-visimisi">
+                        <h3>TUJUAN</h3>
+                        <p>a. Memberikan kesempatan pada anak untuk memenuhi kebutuhan- kebutuhan fisik maupun psikologisnya dan mengembangkan potensi- potensi yang ada pada anak usia dini secara optimal sebagai individu yang unik.</p>
+                        <p>b. Memberikan bimbingan yang seksama agar anak memiliki sifat dan kebiasaan yang baik, sehingga mereka dapat diterima oleh masyarakat.</p>
+                        <p>c. Mencapai kematangan mental dan fisik yang dibutuhkan agar dapat melanjutkan pada jenjang pendidikan yang lebih tinggi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+
+                for(var i = 0; i < reveals.length; i++){
+
+                    var windowheight = window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150;
+
+                    if(revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; All Right Reserved IF2 SMAN 3 BANDUNG - 2024</p>
+    </footer>
+
+</body>
+</html>
